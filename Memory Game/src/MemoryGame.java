@@ -7,7 +7,10 @@ public class MemoryGame
 
 		public static void main(String[] args) throws IOException
 			{
+				introduction.intro();
 				board.fillBlankBoard();
+				bringInArray.fillDataArray();
 				board.printBlankBoard();
+				
 			}
 	}

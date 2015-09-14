@@ -5,6 +5,11 @@ public class introduction
 
 		public static void main(String[] args)
 			{
+				intro();				
+			}
+
+		public static void intro()
+			{
 				int choice;
 				Scanner decision = new Scanner(System.in);
 				System.out.println("Would you like to play a memory game? Input 1 if you would. If not, input 2.");
@@ -18,6 +23,7 @@ public class introduction
 						System.out.println("That's too bad. Goodbye!");
 						System.exit(0);
 					}
+				
 			}
 
 	}
