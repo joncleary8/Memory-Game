@@ -1,23 +1,25 @@
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
+
 import java.io.File;
 import java.io.IOException;
 
 public class bringInArray
 	{
 		static ArrayList<String> animals = new ArrayList <String>();
-
+		static String dataArray [][] = new String [4][4];
+		
 		public static void main(String[] args) throws IOException
 			{
 				randomizeAnimalList();
 				fillDataArray();
-				randomizeDataArray();
 			}
 
 		public static void fillDataArray()
 			{
-				String dataArray [][] = new String [4][4];
 				int counter = 0;
 				for (int row=0; row<4; row++)
 					{
@@ -51,13 +53,4 @@ public class bringInArray
 				animals.add("Bees");
 				Collections.shuffle(animals);
 			}
-
-		public static void randomizeDataArray()
-			{
-				
-				
-				
-			}
-
-
 	}

@@ -9,6 +9,7 @@ public class MemoryGame
 			{
 				introduction.intro();
 				board.fillBlankBoard();
+				bringInArray.randomizeAnimalList();
 				bringInArray.fillDataArray();
 				board.printBlankBoard();
 				
